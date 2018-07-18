@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.board{
+  padding-top: 10px;
+  display: flex;
+  width: 600px;
+  height: 600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+
+.square{
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:nth-child(3n+1){
+  border-left: 0;
+}
+
+.square:nth-child(3n){
+  border-right: 0;
+}
+
+.square:nth-child(1){
+  border-top: 0;
+}
+.square:nth-child(2){
+  border-top: 0;
+}
+.square:nth-child(3){
+  border-top: 0;
+}
+
+.square:nth-child(7){
+  border-bottom: 0;
+}
+
+.square:nth-child(8){
+  border-bottom: 0;
+}
+
+.square:nth-child(9){
+  border-bottom: 0;
+}
+
+.square:hover{
+  cursor: pointer;
+  background-color: aquamarine;
+}
